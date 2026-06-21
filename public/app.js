@@ -28,7 +28,7 @@ export let files = [];
 /* ── Login: search action ── */
 document.getElementById('search-btn').onclick = doSearch;
 function doSearch() {
-    const code = document.getElementById('student-id').value.trim();
+    const code = document.getElementById('student-id').value.trim().toLowerCase();
     if(code=== "") return;
     if(code !== student?.code) {
         student = null;
