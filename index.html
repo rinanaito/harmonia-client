@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="screen.js"></script>
+  <script type="module" src="app.js"></script>
+  <title>Harmonia Language Lab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- ══════════════════════════════
+       SCREEN 1: LOGIN
+  ══════════════════════════════ -->
+  <div class="screen active" id="screen-login">
+    <div class="login-card">
+      <div class="logo-wrap">
+        <img src="logo.png" alt="">
+      </div>
+      <h1>Harmonia Language Lab</h1>
+      <p class="tagline">Student moments, shared with care</p>
+      <div class="field">
+        <label for="student-id">Student ID</label>
+        <input type="text" id="student-id" placeholder="Enter student code" autocomplete="off" value="yesuge" />
+      </div>
+      <button id="search-btn" class="btn-gold">Search</button>
+    </div>
+    <div class="login-footer">
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+  </div>
+  <!-- ══════════════════════════════
+       SCREEN 2: FOLDERS
+  ══════════════════════════════ -->
+  <div class="screen" id="screen-folders">
+    <header class="topbar">
+      <button id="back-btn" class="back-btn" onclick="backToSearch()" aria-label="Back">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M10 3L5 8L10 13" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div class="topbar-logo">
+        <div class="logo-wrap">
+          <img src="logo.png" alt="">
+        </div>
+        <div>
+          <div class="topbar-title" id="folders-student-name"></div>
+          <div class="topbar-sub">Harmonia Language Lab</div>
+        </div>
+      </div>
+<!--      <div class="topbar-right">-->
+<!--        <button class="icon-btn" aria-label="Search">-->
+<!--          <svg width="15" height="15" viewBox="0 0 16 16" fill="none">-->
+<!--            <circle cx="7" cy="7" r="4.5" stroke="currentColor" stroke-width="1.6"/>-->
+<!--            <path d="M10.5 10.5L13 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>-->
+<!--          </svg>-->
+<!--        </button>-->
+<!--        <button class="icon-btn" aria-label="More">-->
+<!--          <svg width="15" height="15" viewBox="0 0 16 16" fill="none">-->
+<!--            <circle cx="3" cy="8" r="1.3" fill="currentColor"/>-->
+<!--            <circle cx="8" cy="8" r="1.3" fill="currentColor"/>-->
+<!--            <circle cx="13" cy="8" r="1.3" fill="currentColor"/>-->
+<!--          </svg>-->
+<!--        </button>-->
+<!--      </div>-->
+    </header>
+
+    <div class="content">
+      <p class="section-label">Folders</p>
+      <div id="folders-content">
+        <!-- Folders injected by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════
+       LIGHTBOX
+  ══════════════════════════════ -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+      <img id="lightbox-image" src="" alt="" style="max-width:88vw;max-height:82vh;border-radius:14px;box-shadow:0 30px 80px rgba(0,0,0,0.6);"/>
+
+  </div>
+</body>
+</html>
