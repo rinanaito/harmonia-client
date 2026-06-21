@@ -225,7 +225,7 @@ input[type="text"]:focus {
   transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), padding 0.35s ease;
 }
 .folder-item.expanded .folder-content {
-  /*overflow-y: scroll;*/
+  overflow-y: scroll;
   max-height: 1000px;
 }
 .folder-divider {
