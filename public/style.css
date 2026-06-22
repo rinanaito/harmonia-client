@@ -232,7 +232,7 @@ input[type="text"]:focus {
 .folder-divider {
   height: 1px;
   background: rgba(0,0,0,0.06);
-  margin-bottom: 12px;
+  margin: 12px;
 }
 .folder-item.expanded .folder-content.photos-content { flex: 1; }
 .photos-content { flex: 1; margin-bottom: 20px}
