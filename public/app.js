@@ -123,7 +123,7 @@ function renderFolders(code) {
         folder.files = studentFiles
         studentFolders.push(folders[f]);
     })
-
+    studentFolders.sort((a,b) => (b.name > a.name ? 1 : -1));
 
     const container = document.getElementById('folders-content');
     container.innerHTML = '';
